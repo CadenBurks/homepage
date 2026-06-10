@@ -63,6 +63,16 @@ header {
 .image-container {
   width: 40rem;
   height: 30rem;
+  position: relative;
+}
+
+.image-name {
+  position: absolute;
+  bottom: 1rem;
+  left: 1rem;
+  color: white;
+  font-size: 3rem;
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.6);
 }
 
 .header-image {
@@ -263,6 +273,15 @@ footer {
   transform: scale(1.1);
 }
 
+@media (max-width: 1024px) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .image-name {
+    font-size: 2rem;
+  }
+}
+
 @media (max-width: 768px) {
   .grid {
     grid-template-columns: 1fr;
@@ -292,12 +311,6 @@ footer {
 
   .footer-email {
     font-size: 1.2rem;
-  }
-}
-
-@media (max-width: 1024px) {
-  .grid {
-    grid-template-columns: repeat(2, 1fr);
   }
 }
 
