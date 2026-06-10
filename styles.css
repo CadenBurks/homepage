@@ -108,6 +108,16 @@ header {
   display: block;
 }
 
+.resume-link {
+  color: var(--color-text);
+}
+
+.resume-link svg {
+  width: 2.5rem;
+  height: 2.5rem;
+  color: var(--color-text);
+}
+
 main {
   padding: 3rem;
   color: var(--color-text);
@@ -241,12 +251,14 @@ footer {
 
 .about-logo,
 .footer-logo,
-.gh-logo {
+.gh-logo,
+.resume-link {
   transition: transform 0.2s ease-in-out;
 }
 
 .about-logo:hover,
 .footer-logo:hover,
-.gh-logo:hover {
+.gh-logo:hover,
+.resume-link:hover {
   transform: scale(1.1);
 }
